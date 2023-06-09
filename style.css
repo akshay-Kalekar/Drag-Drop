@@ -8,11 +8,22 @@ body{
     width: 98vw;
 
 }
+/* Button */
+.button{
+    font-size: medium;
+    background-color: #bcd0bc48;
+    border: 1px solid;
+    border-radius: 5%;
+    padding: 1% 2%;
+    letter-spacing: 0.25ch;
+    
+}
 
 /* Grid Items */
 .item-1,.c2-item-1,.item-2,.c2-item-2,.item-3,.c2-item-3,.item-4,.c2-item-4,.item-5,.c2-item-5,.item-6,.c2-item-6{
     height: 100%;
     width: 100%;
+    
 }
 .item-1,.c2-item-1{
     grid-area:box1;
@@ -122,6 +133,7 @@ body{
 /* Pic */
 .pic{
     display: block;
+    cursor: move;
 }
 .pic-1{
     height: 70%;
@@ -158,6 +170,7 @@ body .heading{
     font-family:cursive;
     font-weight: semi-bolder;
     font-style: italic;
+    cursor: move;
 }
 .text-con{
     border-bottom : 1px solid black;
@@ -221,9 +234,6 @@ body .heading{
         height: 40vh;
         
     }
-    .bg_1{
-        height: ;
-    }
 
     /* Pic */
 .pic{
@@ -273,21 +283,7 @@ body .heading{
     margin-bottom: 2%;
 }
   }
-  
-  /* Styles for screens between 481px and 768px */
-  @media (min-width: 481px) and (max-width: 768px) {
-    /* Update styles for medium-sized screens */
-  }
-  
-  /* Styles for screens between 769px and 1024px */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Update styles for larger screens */
-  }
-  
-  /* Styles for screens larger than 1024px */
-  @media (min-width: 1025px) {
-    /* Update styles for extra-large screens */
-  }
+
 
 
 
