@@ -128,15 +128,24 @@ body{
     width: 85%;
 
 }
-.pic-4{
+.pic-2{
     height: 75%;
     width: 85%;
+
+}
+.pic-3{
+    height: 65%;
+    width: 95%;
+
+}
+.pic-4{
+    height: 65%;
+    width: 95%;
 
 }
 .pic-5{
     height: 65%;
     width: 95%;
-
 }
 /* text */
 body .heading{
@@ -196,7 +205,89 @@ body .heading{
     'box4 box5 box6'
     '. . box6';
 }
-/* Refresh Icon*/
+
+
+/* Styles for screens smaller than or equal to 480px */
+@media (max-width: 768px) {
+    /* Update styles for smaller screens */
+    .containerGroup{
+        flex-direction: column;
+        gap:2vh
+
+    }
+    .container_1,.container_2{
+        display: grid;
+        width: 90vw;
+        height: 40vh;
+        
+    }
+    .bg_1{
+        height: ;
+    }
+
+    /* Pic */
+.pic{
+    display: block;
+}
+.pic-1{
+    height: 70%;
+    width: 85%;
+
+}
+.pic-2{
+    height: 75%;
+    width: 85%;
+
+}
+.pic-3{
+    height: 65%;
+    width: 95%;
+
+}
+.pic-4{
+    height: 65%;
+    width: 95%;
+
+}
+.pic-5{
+    height: 65%;
+    width: 95%;
+
+}
+/* text */
+body .heading{
+    font-size: 1rem;
+    text-align: center;
+    height: 2.5vh;
+}
+.text{
+    font-size:small;
+    font-family:cursive;
+    font-weight: semi-bolder;
+    font-style: italic;
+}
+.text-con{
+    border-bottom : 1px solid black;
+    min-width: 5ch;
+    min-height: 2ch;
+    margin-bottom: 2%;
+}
+  }
+  
+  /* Styles for screens between 481px and 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Update styles for medium-sized screens */
+  }
+  
+  /* Styles for screens between 769px and 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Update styles for larger screens */
+  }
+  
+  /* Styles for screens larger than 1024px */
+  @media (min-width: 1025px) {
+    /* Update styles for extra-large screens */
+  }
 
 
 

@@ -52,6 +52,7 @@ function drop(event){
     var isTargetText = target.id.toLowerCase() === "text-1" || target.id.toLowerCase() === "text-2" || target.id.toLowerCase() === "text-3"|| target.id.toLowerCase() === "text-4" || target.id.toLowerCase() === '';
     if( (isDraggedImage && isTargetImage) || (target.children.length>0) || (isDraggedImage && isTargetText) || ((isDraggedText && isTargetImage) || (isDraggedText && isTargetText))){
         event.stopPropagation();
+        document.getElementById("status").innerHTML=`Item Already Exists`
         return false;
     }
     else{
