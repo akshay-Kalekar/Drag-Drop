@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag And Drop</title>
+</head>
+
+<body>
+    <div id="status" class="text heading"> Drag And Drop Elements</div>
+    <div class="containerGroup">
+        <div  id="container-1" class="container_1" >
+            <div id="item_1"class="item-1" data-index="1" > 
+                <div id="bg-1" class="bg_1" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="1.1" > <img id="img-1" class="pic pic-1" src="image/apple.png" draggable="true" ondragstart="drag(event)" data-index="1.1.1"  /></div>
+            </div>  
+            <div id="item_2"class="item-2" data-index="2">   
+                <div id="bg-2" class="bg_2" ondrop="drop(event)" ondragover="allowDrop(event)"> <img id="img-2" class="pic pic-2"src="image/mangoJuice.png" draggable="true" ondragstart="drag(event)" data-index="1.1"  /></div>    
+            </div>
+            <div id="item_3"class="item-3" data-index="3">  
+                <div id="text-container-1" class="text-con" ondrop="drop(event)" ondragover="allowDrop(event) " data-index="3.1" >
+
+                    <div id="text-1" class="text" draggable="true" ondragstart="drag(event)" data-index="3.1.1" >
+                    <span data-index="3.1.1.1" >
+                        Monarch
+                    </span>    
+                     </div>  
+                </div>
+                <div id="bg-3" class="bg_3" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="3.2"  > <img id="img-3" class="pic pic-3"src="image/Lemon.png" draggable="true" ondragstart="drag(event)"  data-index="3.2.1" /></div>      
+            </div>
+            <div id="item_4"class="item-4" data-index="4"> 
+                <div id="text-container-2" class="text-con" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="4.1" >
+
+                    <div id="text-2" class="text" draggable="true" ondragstart="drag(event)" data-index="4.1.1" >
+                        <span data-index="4.1.1.1" >
+
+                            Fashion
+                        </span>
+                     </div>
+                </div> 
+                <div id="bg-4" class="bg_4" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="4.2" > <img id="img-4" class="pic pic-4"src="image/orangeJuice.png" draggable="true" ondragstart="drag(event)" data-index="4.2.1" /></div>    
+            </div>
+            <div id="item_5"class="item-5" data-index="5"> 
+                <div id="text-container-3" class="text-con" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="5.1" >
+
+                    <div id="text-3" class="text" draggable="true" ondragstart="drag(event)" data-index="5.1.1"  > <span data-index="5.1.1.1">
+
+                        Purple Fashion 
+                    </span>
+                </div>  
+                </div>
+                <div id="bg-5" class="bg_5" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="5.2" > <img id="img-5" class="pic pic-5"src="image/cola.png" draggable="true" ondragstart="drag(event)" data-index="5.2.1" /></div>      
+            </div>
+            <div id="item_6"class="item-6" data-index="6">
+                <div id="text-container-4" class="text-con" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="6.1" >
+
+                    <div id="text-4" class="text" draggable="true" ondragstart="drag(event)" data-index="6.1.1" > 
+                        <span data-index="6.1.1.1">
+
+                            Red Wine 
+                        
+                        </span>
+                    </div>  
+                </div>
+                <div id="bg-6" class="bg_6" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="6.2" > </div>      
+               
+            </div>
+            
+        </div>
+        <div id="container-2" class="container_2 droppable">
+            <div id="c2-item-1"class="c2-item-1"  data-index="2.1"> 
+                <div id="c2-bg-1" class="bg_1" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="2.1.1"> </div>
+                     </div>  
+            <div id="c2-item-2"class="c2-item-2" data-index="2.2" > 
+                <div id="c2-bg-2" class="bg_2" ondrop="drop(event)" ondragover="allowDrop(event)" data-index="2.2.1">
+                </div>    
+            </div>
+            <div id="c2-item-3"class="c2-item-3" data-index="2.3" > 
+                <div id="c2-text-container-1" class="text-con"  ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+                <div id="c2-bg-3" class="bg_3" ondrop="drop(event)" ondragover="allowDrop(event)" >   </div>  
+            </div>
+            <div id="c2-item-4"class="c2-item-4" data-index="2.4" >  
+                <div id="c2-text-container-2" class="text-con"  ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+                <div id="c2-bg-4" class="bg_4" ondrop="drop(event)" ondragover="allowDrop(event)" >  </div>   
+            </div>
+            <div id="c2-item-5"class="c2-item-5"  data-index="2.5"> 
+                <div id="c2-text-container-3" class="text-con"  ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div id="c2-bg-5" class="bg_5" ondrop="drop(event)" ondragover="allowDrop(event)" > </div>   </div>
+            <div id="c2-item-6  "class="c2-item-6" data-index="2.6" >   
+                <div id="c2-text-container-4" class="text-con"  ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div id="c2-bg-6" class="bg_6" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+                </div>
+              </div>
+            
+        </div>
+    </div>
+    <button class="" onclick="resetContainers()">Reset</button>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
