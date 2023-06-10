@@ -56,7 +56,7 @@ function drop(event){
         event.target.appendChild(document.getElementById(data))
         
     }
-    document.getElementById("status").innerHTML=`Droped element`
+    document.getElementById("status").innerHTML=`Dropped element`
 }
 
 //Allows to the containers to drag
